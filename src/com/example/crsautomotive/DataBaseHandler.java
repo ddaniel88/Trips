@@ -195,6 +195,39 @@ public class DataBaseHandler extends SQLiteOpenHelper{
         return tripList;    	
     }
     
+    public boolean checkIsTripExist(UUID guid)
+    {
+    	boolean exist = false;
+    	String selectQuery = "SELECT * FROM " + TABLE_TRIPS + " WHERE " + KEY_GUID + " = '" + guid + "'";
+    	SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        int numberOfTrips = cursor.getCount();
+        if(numberOfTrips > 0)
+        	exist = true;
+        db.close();
+        return  exist;
+    }
+    
+    public List<UUID> getAllGUIDs()
+    {
+    	List<UUID> all_guids = new ArrayList<UUID>();
+    	
+    	String selectQuery = "SELECT "+ KEY_GUID + " FROM " + TABLE_TRIPS;
+    	SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) 
+        {
+            do 
+            {
+            	all_guids.add(UUID.fromString(cursor.getString(0)));
+            } 
+            while (cursor.moveToNext());
+        }
+        db.close();
+    	
+    	return all_guids;
+    }
+    
     //get Number of trips
     public int getNumberOfTrips()
     {

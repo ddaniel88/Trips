@@ -11,6 +11,7 @@ import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -476,41 +477,48 @@ public class TripLog extends ListActivity implements OnClickListener {
 				csvReader.readNext();
 				int newtrip_id=-1;
 				int id = -1;
+				UUID previous = java.util.UUID.randomUUID();
+				List<UUID> all_guids = db.getAllGUIDs();
 				while((row = csvReader.readNext()) != null) {
 				    System.out.println(row[0] + " # " + row[1] + " # " + row[2]  + " # " + row[3]  + " #  " + row[4] + " #  " +  row[5]  + " #  " + row[6]
 				    		+ " # " + row[7] + " # " + row[8] + " # " + row[9]  + " # " + row[10]  + " #  " + row[11] + " #  " +  row[12]  + " #  " + row[13]
 			    		+ " # " + row[14] + " # "+ row[15]);
-//				    public Trip(String name, double total_distance, String total_time, int complete, String start_date,
-//				    		String end_date, String type, String note)
 				    
-				    if(Integer.parseInt(row[0]) != newtrip_id)
+				    if(!checkIsTripExist(all_guids,UUID.fromString(row[9])) || previous.compareTo(UUID.fromString(row[9])) == 0)
 				    {
-					    //Create Trip
-					    tmp_trip = new Trip();
-					    tmp_trip.setNAME(row[1]);
-					    tmp_trip.setTYPE(row[2]);
-					    tmp_trip.setCOMPLETE(Integer.parseInt(row[3]));
-					    tmp_trip.setDISTANCE(Integer.parseInt(row[4]));
-					    tmp_trip.setTIME(row[5]);
-					    tmp_trip.setNOTE(row[6]);
-					    tmp_trip.setSTARTDATE(row[7]);
-					    tmp_trip.setENDDATE(row[8]);
-					    id = db.addTrip(tmp_trip);
-					    newtrip_id = Integer.parseInt(row[0]);
+				    	if(previous.compareTo(UUID.fromString(row[9])) != 0)
+				    	{
+						    if(Integer.parseInt(row[0]) != newtrip_id)
+						    {
+							    //Create Trip
+							    tmp_trip = new Trip();
+							    tmp_trip.setNAME(row[1]);
+							    tmp_trip.setTYPE(row[2]);
+							    tmp_trip.setCOMPLETE(Integer.parseInt(row[3]));
+							    tmp_trip.setDISTANCE(Integer.parseInt(row[4]));
+							    tmp_trip.setTIME(row[5]);
+							    tmp_trip.setNOTE(row[6]);
+							    tmp_trip.setSTARTDATE(row[7]);
+							    tmp_trip.setENDDATE(row[8]);
+							    id = db.addTrip(tmp_trip);
+							    newtrip_id = Integer.parseInt(row[0]);
+							    previous = UUID.fromString(row[9]);
+						    }
+				    	}
+					    //Create CheckIn
+					    if(id != -1)
+					    {
+						    tmp_checkin = new CheckIn();
+						    tmp_checkin.set_tripId(id);
+						    tmp_checkin.set_latitude(Double.parseDouble(row[11]));
+						    tmp_checkin.set_longitude(Double.parseDouble(row[12]));
+						    tmp_checkin.set_address(row[13]);
+						    tmp_checkin.set_note(row[14]);
+						    tmp_checkin.set_date(row[15]);
+						    db.addCheckIn(tmp_checkin);
+					    }
 				    }
-				    //Create CheckIn
-				    if(id != -1)
-				    {
-					    tmp_checkin = new CheckIn();
-					    tmp_checkin.set_tripId(id);
-					    tmp_checkin.set_latitude(Double.parseDouble(row[10]));
-					    tmp_checkin.set_longitude(Double.parseDouble(row[11]));
-					    tmp_checkin.set_address(row[12]);
-					    tmp_checkin.set_note(row[13]);
-					    tmp_checkin.set_date(row[14]);
-					    tmp_checkin.set_date(row[15]);
-					    db.addCheckIn(tmp_checkin);
-				    }
+				    
 				}
 				db.close();
 				csvReader.close();
@@ -529,7 +537,18 @@ public class TripLog extends ListActivity implements OnClickListener {
 		 }
 	  }
 	
-	String[] ConcatenateArrays(String[] first, String[] second) {
+	private boolean checkIsTripExist(List<UUID> all_guids, UUID guid)
+	{
+		boolean exist = false;
+		
+		if (all_guids.contains(guid)) {
+			exist = true;
+		}
+		
+		return exist;
+	}
+	
+	private String[] ConcatenateArrays(String[] first, String[] second) {
 	    List<String> both = new ArrayList<String>(first.length + second.length);
 	    Collections.addAll(both, first);
 	    Collections.addAll(both, second);
