@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="1"
+    android:background="@drawable/mainbackground">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".1"
+    	android:background="@drawable/header_phone"
+    	android:gravity="center"
+    	>
+         <TextView 
+             android:id="@+id/activity_title" 
+             android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Loading..."/>
+         
+     </LinearLayout>
+    
+
+    
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+    	android:layout_weight=".75">
+    
+	 <LinearLayout
+	     android:id="@+id/layout_camera"  
+	    android:orientation="vertical"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:gravity="center">
+         
+	     <ImageView 
+	         android:id="@+id/camera_img" 
+	         android:layout_height="wrap_content"
+    		 android:layout_width="wrap_content"
+    		/>
+	     
+     </LinearLayout>
+     </ViewFlipper>
+     
+	 <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".15"
+    	android:weightSum="1"
+		    	android:background="@drawable/gradient">
+         
+           <LinearLayout
+                android:id="@+id/layout_trip" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".33"
+		    	android:gravity="center"
+		    	>
+		    	
+               <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/map_gray"/>
+               
+    		</LinearLayout>
+    		
+      		<LinearLayout 
+      		     android:id="@+id/layout_audio" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".33"
+		    	android:gravity="center">
+               
+                <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/audionews_gray"/>
+                
+   			 </LinearLayout>
+   			 
+     	 	<LinearLayout 
+     	 	    android:id="@+id/layout_cameras" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".34"
+		    	android:gravity="center">
+                
+                 <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/camera"/>
+                 
+		    </LinearLayout>
+         
+    </LinearLayout>
+    
+</LinearLayout>

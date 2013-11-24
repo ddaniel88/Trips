@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+
+    <ScrollView 
+         android:layout_width="fill_parent"
+    		android:layout_height="fill_parent">
+   <LinearLayout android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:orientation="vertical">
+       
+    <TextView  
+        	android:layout_margin="5dp"
+             android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="#FFFFFF"
+    		android:text="Type of trip: "/>
+    
+   <RadioGroup
+        android:id="@+id/radioType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+ 
+        <RadioButton
+            android:id="@+id/radioBusiness"
+            android:checked="true"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Trip"  />
+ 
+        <RadioButton
+            android:id="@+id/radioPrivate"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Trip" />
+ 
+    </RadioGroup>
+    
+ 
+ 
+   
+    </LinearLayout> 	
+   </ScrollView>
+</LinearLayout>

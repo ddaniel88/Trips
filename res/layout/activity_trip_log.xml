@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="1"
+    android:background="@drawable/mainbackground_tab">
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".1"
+    	android:background="@drawable/header_phone"
+    	android:gravity="center"
+    	>
+         <TextView 
+             android:id="@+id/activity_title" 
+             android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Trip Log"/>
+         
+     </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".75"
+    	android:orientation="vertical">
+         
+        <RelativeLayout 
+        	    android:layout_height="wrap_content"
+        	    android:layout_width="wrap_content">
+           <Button
+	            android:id="@+id/btn_play"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="New trip" 
+	            android:onClick="OnNewTripClick">
+	        </Button>
+	        
+           <Button
+	            android:id="@+id/btn_export"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/btn_play"
+	            android:text="Export" 
+	            android:onClick="OnExportClick">
+	        </Button>
+	        
+             <Button
+	            android:id="@+id/btn_import"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/btn_export"
+	            android:text="Import" 
+	            android:onClick="OnImportClick">
+	        </Button>
+	        </RelativeLayout>
+         
+          <ListView
+                 android:id="@android:id/list"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:minHeight="?android:attr/listPreferredItemHeight" 
+                 android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".15"
+    	android:weightSum="1"
+		    	android:background="@drawable/gradient">
+         
+           <LinearLayout
+                android:id="@+id/layout_trip" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".33"
+		    	android:gravity="center"
+		    	
+		    	>
+		    	
+               <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/map"/>
+               
+    		</LinearLayout>
+    		
+      		<LinearLayout 
+      		     android:id="@+id/layout_audio" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".33"
+		    	android:gravity="center">
+               
+                <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/audionews_gray"/>
+                
+   			 </LinearLayout>
+   			 
+     	 	<LinearLayout 
+     	 	    android:id="@+id/layout_cameras" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".34"
+		    	android:gravity="center">
+                
+                 <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/camera_gray"/>
+                 
+		    </LinearLayout>
+         
+    </LinearLayout>
+   
+
+</LinearLayout>

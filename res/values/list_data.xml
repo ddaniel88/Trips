@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="c400">
+        <item>N of Hwy 401</item>
+        <item>N of Wilson Ave</item>
+        <item>Near Sheppard Ave</item>
+        <item>N of Sheppard Ave</item>
+        <item>Near Finch Ave</item>
+        <item>N of Finch Ave</item>
+        <item>Near Steeles Ave</item>
+        <item>Near Hwy 407</item>
+        <item>Near Hwy 7</item>
+        <item>N of Hwy 7</item>
+        <item>Near Langstaff Rd</item>
+    </string-array>
+    
+    <string-array name="u400">
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc23.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc105.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc106.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc107.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc108.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc109.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc110.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc111.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc112.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc113.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc114.jpg</item>
+    </string-array>
+    
+    <string-array name="c401">
+        <item>Near Harwood Ave</item>
+        <item>Near Westney Rd</item>
+        <item>Near Church St</item>
+        <item>E of Brock Rd</item>
+        <item>Near Brock Rd</item>
+        <item>E of Liverpool Rd</item>
+        <item>Near Liverpool Rd</item>
+        <item>E of Whites Rd</item>
+        <item>Near Whites Road</item>
+        <item>Near Rougemout Dr</item>
+        
+        <item>Near Rouge River</item>
+        <item>Near Port Union Rd</item>
+        <item>Near Kingston Rd</item>
+        <item>Near Meadowvale Rd</item>
+        <item>E of Conlins Rd</item>
+        <item>Near Conlins Rd</item>
+        <item>Near Morningside Ave</item>
+        <item>E of Neilson Rd</item>
+        <item>Near Neilson Rd</item>
+        <item>E of Markham Rd</item>
+        
+        <item>Near Markham Rd</item>
+        <item>Near Bellamy Rd</item>
+        <item>Near McCowan Rd</item>
+        <item>Near Brimley Rd</item>
+        <item>Near Midland Ave</item>
+        <item>Near Kennedy Rd</item>
+        <item>Near Birchmount Rd</item>
+        <item>Near Warden Ave</item>
+        <item>Near Victoria Park Ave</item>
+        <item>E of DVP</item>
+        
+        <item>Near Don Mills Rd</item>
+        <item>Near Leslie St</item>
+        <item>E of Bayview Ave</item>
+        <item>Near Bayview Ave</item>
+        <item>E of Yonge St</item>
+        <item>Near Yonge St</item>
+        <item>Near Hoggs Hollow</item>
+        <item>Near Avenue Rd</item>
+        <item>Near Bathurst St</item>
+        <item>Near Allen Rd S</item>
+        
+        <item>Near Allen Rd N</item>
+        <item>Near Dufferin St</item>
+        <item>Near Caledonia Rd</item>
+        <item>Near Keele St</item>
+        <item>Near MTO Operations Centre</item>
+        <item>At basket weave near Jane St</item>
+        <item>Near Jane St</item>
+        <item>Near Hwy 400 S</item>
+        <item>Near Weston Rd</item>
+        <item>Near Islington Ave</item>
+        
+        <item>Near Hwy 409 N</item>
+        <item>Near Kipling Ave</item>
+        <item>Near Martin Grove Rd</item>
+        <item>Near Hwy 27</item>
+        <item>Near Carlingview Dr</item>
+        <item>Near Hwy 427 S</item>
+        <item>Near Hwy 427 N</item>
+        <item>Near Renforth Dr</item>
+        <item>Near Pearson Airport</item>
+        <item>Near Transfer(E of Dixie)</item>
+        
+        <item>Near Etobicoke Creek</item>
+        <item>Near Dixie Rd</item>
+        <item>Near Tomken Rd</item>
+        <item>Near Hwy 410</item>
+    
+    </string-array>
+    
+    <string-array name="u401">
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc103.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc102.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc101.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc100.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc99.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc98.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc97.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc96.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc95.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc94.jpg</item>
+        
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc93.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc92.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc74.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc73.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc72.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc71.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc70.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc69.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc68.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc67.jpg</item>
+        
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc66.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc65.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc64.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc63.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc62.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc61.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc60.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc59.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc58.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc57.jpg</item>
+        
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc54.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc53.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc52.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc51.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc50.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc11.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc12.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc13.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc14.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc15.jpg</item>
+        
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc16.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc17.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc18.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc19.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc20.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc21.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc22.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc24.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc25.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc26.jpg</item>
+        
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc27.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc28.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc29.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc30.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc32.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc31.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc33.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc34.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc35.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc36.jpg</item>
+        
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc37.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc38.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc39.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc40.jpg</item>
+    </string-array>
+    
+    <string-array name="c403">
+        <item>Near Matheson Blvd.</item>
+        <item>S of Hwy 401</item>
+        <item>Near Eglinton Ave</item>
+        <item>Near Eastgate Pkwy</item>
+        <item>Near Central Pkwy E</item>
+        <item>Near Hurontario St</item>
+    </string-array>
+    
+    <string-array name="u403">
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc43.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc42.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc44.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc45.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc121.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc122.jpg</item>
+    </string-array>
+    
+    <string-array name="c404">
+        <item>N of Hwy 401</item>
+        <item>Near Sheppard Ave</item>
+        <item>Near Van Horne Ave</item>
+        <item>Near Finch Ave</item>
+    </string-array>
+    
+    <string-array name="u404">
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc55.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc81.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc82.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc83.jpg</item>
+    </string-array>
+    
+    <string-array name="c410">
+        <item>N of Hwy 401</item>
+        <item>Near Courtney Park Rd</item>
+    </string-array>
+    
+    <string-array name="u410">
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc41.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc75.jpg</item>
+    </string-array>
+    
+    <string-array name="c427">
+        <item>N of Rathburn Rd</item>
+        <item>N of Bloor St</item>
+    </string-array>
+    
+    <string-array name="u427">
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc77.jpg</item>
+        <item>http://www.cdn.mto.gov.on.ca/english/traveller/compass/camera/pictures/loc76.jpg</item>
+    </string-array>
+    
+    <string-array name="csv_columns">
+        <item>Trip ID</item>
+        <item>Trip Name</item>
+        <item>Trip Type</item>
+        <item>Trip Complete</item>
+        <item>Trip Total Distance</item>
+        <item>Trip Total Time</item>
+        <item>Trip Note</item>
+        <item>Trip Start Date</item>
+        <item>Trip End Date</item>
+        <item>Trip GUID</item>
+        <item>CheckIn ID</item>
+        <item>Latitude</item>
+        <item>Longitude</item>
+        <item>Address</item>
+        <item>Note</item>
+        <item>Date</item>
+    </string-array>
+    
+</resources>

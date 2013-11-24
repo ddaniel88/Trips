@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="1"
+    android:background="@drawable/mainbackground_tab">
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".1"
+    	android:background="@drawable/header_phone"
+    	android:gravity="center"
+    	>
+         <TextView 
+             android:id="@+id/activity_title" 
+             android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Active trip - name"/>
+         
+     </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".75"
+    	android:orientation="vertical"
+    	android:weightSum="1">
+
+        <LinearLayout  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	           android:layout_height="fill_parent"
+	            android:orientation="horizontal" 
+	            android:gravity="center">
+	
+	            <Button
+	                android:id="@+id/btn_checkin"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="OnCheckInClick"
+	                android:text="Check-In" />
+	
+	            <Button
+	                android:id="@+id/btn_stoptrip"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/btn_checkin"
+	                android:onClick="OnStopClick"
+	                android:text="Stop" />
+	        </RelativeLayout>
+       </LinearLayout>
+       	
+       <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:weightSum="1"
+    	>
+            
+            <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight=".33"
+		    	android:orientation="horizontal"
+		    	>
+			         <TextView 
+		             style="@android:style/TextAppearance.Medium"
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="Start date: "/>
+			         
+			        <TextView 
+		             android:id="@+id/active_date" 
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="date"/>
+	         </LinearLayout>
+	         
+             <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight=".33"
+		    	android:orientation="horizontal"
+		    	>
+			       <TextView 
+		             style="@android:style/TextAppearance.Medium"
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="Distance: "/>
+			       
+			       <TextView 
+		             android:id="@+id/active_distance" 
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="calculating..."/>
+	           </LinearLayout>
+	           
+               <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="0dp"
+		    	android:layout_weight=".33"
+		    	android:orientation="horizontal"
+		    	>
+			       <TextView 
+		             style="@android:style/TextAppearance.Medium"
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="Total time "/>
+			       
+			       <TextView 
+		             android:id="@+id/active_time" 
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="time"/>
+	           </LinearLayout>
+	     </LinearLayout>
+         
+        <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_marginTop="5dp"
+		    	>
+             
+             <TextView 
+		            
+		             style="@android:style/TextAppearance.Medium"
+		             android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="Check-Ins: "/>
+			       
+       
+          <ListView
+                 android:id="@android:id/list"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:minHeight="?android:attr/listPreferredItemHeight" 
+                 android:listSelector= "#00000000"
+                 android:cacheColorHint="#00000000"/>
+          </LinearLayout>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".15"
+    	android:weightSum="1"
+		    	android:background="@drawable/gradient">
+         
+           <LinearLayout
+                android:id="@+id/layout_trip" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".33"
+		    	android:gravity="center"
+		    	
+		    	>
+		    	
+               <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/map"/>
+               
+    		</LinearLayout>
+    		
+      		<LinearLayout 
+      		     android:id="@+id/layout_audio" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".33"
+		    	android:gravity="center">
+               
+                <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/audionews_gray"/>
+                
+   			 </LinearLayout>
+   			 
+     	 	<LinearLayout 
+     	 	    android:id="@+id/layout_cameras" 
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".34"
+		    	android:gravity="center">
+                
+                 <ImageView 
+                   	android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:background="@drawable/camera_gray"/>
+                 
+		    </LinearLayout>
+         
+    </LinearLayout>
+   
+
+</LinearLayout>
